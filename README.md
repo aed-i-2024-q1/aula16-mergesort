@@ -1,15 +1,12 @@
-Container básico para AED-I com as dependências básicas para desenvolver em C.
+## Aula 16 - Mergesort
 
-O template do projeto contém:
+Para fins de teste, optamos por criar módulos separados para a operação de mesclagem e a a 
+operação de ordenação:
 
-- exemplo de estrutura de código contendo programa principal (`main.c`) e módulo (`lib.c` e `lib.h`)
-- exemplo de Makefile com as seguintes tarefas:
-  - `make all`: compilação do programa principal e do módulo
-  - `make lib`: compilação do módulo
-  - `make run`: execução do programa principal
-  - `make clean`: remoção dos arquivos objeto e do programa principal
+* `merge.h` e `merge.c`: operação de mesclagem
+* `merge_sort.h` e `merge_sort.c`: operação de ordenação
 
-Para rodar o projeto em ambiente virtualizado (Codespace) você deve:
-- logar no GitHub com sua conta
-- para criar uma máquina virtual com o ambiente de desenvolvimento, clique no botão "Code" e depois em "Open with Codespaces"
-- posteriormente, você pode exportar as mudanças da máquina virtual para um fork na sua conta
+O arquivo `merge_sort.c` contém duas versões do algoritmo mergesort: 
+
+* `mergesortRecur`: versão recursiva (top-down)
+* `mergesortIter`: versão iterativa (bottom-up)
